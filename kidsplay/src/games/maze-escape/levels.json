@@ -1,0 +1,255 @@
+{
+ "schemaVersion": 1,
+ "id": "maze-core",
+ "version": "1.0.0",
+ "type": "maze_layouts",
+ "minAppVersion": "1.0.0",
+ "title": {
+  "en": "Maze Adventures",
+  "ar": "\u0645\u063a\u0627\u0645\u0631\u0627\u062a \u0627\u0644\u0645\u062a\u0627\u0647\u0629"
+ },
+ "languages": [
+  "en",
+  "ar"
+ ],
+ "assets": [],
+ "levels": [
+  {
+   "id": "e1",
+   "difficulty": "easy",
+   "grid": [
+    "#########",
+    "#S..#..*#",
+    "###.#.###",
+    "#*..#...#",
+    "#.#####.#",
+    "#...*...#",
+    "#.#####.#",
+    "#......E#",
+    "#########"
+   ]
+  },
+  {
+   "id": "e2",
+   "difficulty": "easy",
+   "generator": {
+    "seed": 101,
+    "w": 4,
+    "h": 4,
+    "keys": 0,
+    "stars": 2,
+    "braid": 0.4
+   }
+  },
+  {
+   "id": "e3",
+   "difficulty": "easy",
+   "generator": {
+    "seed": 114,
+    "w": 5,
+    "h": 4,
+    "keys": 0,
+    "stars": 2,
+    "braid": 0.4
+   }
+  },
+  {
+   "id": "e4",
+   "difficulty": "easy",
+   "generator": {
+    "seed": 127,
+    "w": 5,
+    "h": 5,
+    "keys": 0,
+    "stars": 3,
+    "braid": 0.4
+   }
+  },
+  {
+   "id": "e5",
+   "difficulty": "easy",
+   "generator": {
+    "seed": 140,
+    "w": 6,
+    "h": 5,
+    "keys": 0,
+    "stars": 3,
+    "braid": 0.4
+   }
+  },
+  {
+   "id": "e6",
+   "difficulty": "easy",
+   "generator": {
+    "seed": 153,
+    "w": 6,
+    "h": 6,
+    "keys": 0,
+    "stars": 3,
+    "braid": 0.4
+   }
+  },
+  {
+   "id": "e7",
+   "difficulty": "easy",
+   "generator": {
+    "seed": 166,
+    "w": 7,
+    "h": 6,
+    "keys": 0,
+    "stars": 3,
+    "braid": 0.4
+   }
+  },
+  {
+   "id": "m1",
+   "difficulty": "medium",
+   "generator": {
+    "seed": 501,
+    "w": 7,
+    "h": 7,
+    "keys": 1,
+    "stars": 3
+   }
+  },
+  {
+   "id": "m2",
+   "difficulty": "medium",
+   "generator": {
+    "seed": 518,
+    "w": 8,
+    "h": 7,
+    "keys": 1,
+    "stars": 3
+   }
+  },
+  {
+   "id": "m3",
+   "difficulty": "medium",
+   "generator": {
+    "seed": 535,
+    "w": 8,
+    "h": 8,
+    "keys": 1,
+    "stars": 3
+   }
+  },
+  {
+   "id": "m4",
+   "difficulty": "medium",
+   "generator": {
+    "seed": 552,
+    "w": 9,
+    "h": 8,
+    "keys": 1,
+    "stars": 4
+   }
+  },
+  {
+   "id": "m5",
+   "difficulty": "medium",
+   "generator": {
+    "seed": 569,
+    "w": 9,
+    "h": 9,
+    "keys": 2,
+    "stars": 4
+   }
+  },
+  {
+   "id": "m6",
+   "difficulty": "medium",
+   "generator": {
+    "seed": 586,
+    "w": 10,
+    "h": 9,
+    "keys": 2,
+    "stars": 4
+   }
+  },
+  {
+   "id": "m7",
+   "difficulty": "medium",
+   "generator": {
+    "seed": 603,
+    "w": 10,
+    "h": 10,
+    "keys": 2,
+    "stars": 4
+   }
+  },
+  {
+   "id": "h1",
+   "difficulty": "hard",
+   "requireAllStars": false,
+   "generator": {
+    "seed": 901,
+    "w": 11,
+    "h": 10,
+    "keys": 2,
+    "stars": 5
+   }
+  },
+  {
+   "id": "h2",
+   "difficulty": "hard",
+   "requireAllStars": true,
+   "generator": {
+    "seed": 924,
+    "w": 11,
+    "h": 11,
+    "keys": 2,
+    "stars": 5
+   }
+  },
+  {
+   "id": "h3",
+   "difficulty": "hard",
+   "requireAllStars": false,
+   "generator": {
+    "seed": 947,
+    "w": 12,
+    "h": 11,
+    "keys": 3,
+    "stars": 5
+   }
+  },
+  {
+   "id": "h4",
+   "difficulty": "hard",
+   "requireAllStars": true,
+   "generator": {
+    "seed": 970,
+    "w": 12,
+    "h": 12,
+    "keys": 3,
+    "stars": 6
+   }
+  },
+  {
+   "id": "h5",
+   "difficulty": "hard",
+   "requireAllStars": true,
+   "generator": {
+    "seed": 993,
+    "w": 13,
+    "h": 12,
+    "keys": 3,
+    "stars": 6
+   }
+  },
+  {
+   "id": "h6",
+   "difficulty": "hard",
+   "requireAllStars": true,
+   "generator": {
+    "seed": 1016,
+    "w": 14,
+    "h": 13,
+    "keys": 3,
+    "stars": 7
+   }
+  }
+ ],
+ "sizeBytes": 0
+}

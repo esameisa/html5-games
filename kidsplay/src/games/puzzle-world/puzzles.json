@@ -1,0 +1,127 @@
+{
+ "schemaVersion": 1,
+ "id": "puzzle-core",
+ "version": "1.0.0",
+ "type": "puzzle_images",
+ "minAppVersion": "1.0.0",
+ "title": {
+  "en": "Puzzle Pictures",
+  "ar": "صور الألغاز"
+ },
+ "languages": [
+  "en",
+  "ar"
+ ],
+ "assets": [],
+ "levels": [
+  {
+   "id": "animals-lion",
+   "theme": "animals",
+   "title": {
+    "en": "Happy Lion",
+    "ar": "الأسد السعيد"
+   },
+   "image": "assets/puzzles/animals-lion.svg"
+  },
+  {
+   "id": "animals-cat",
+   "theme": "animals",
+   "title": {
+    "en": "Garden Cat",
+    "ar": "قطة الحديقة"
+   },
+   "image": "assets/puzzles/animals-cat.svg"
+  },
+  {
+   "id": "dinosaurs-trex",
+   "theme": "dinosaurs",
+   "title": {
+    "en": "Volcano Dino",
+    "ar": "ديناصور البركان"
+   },
+   "image": "assets/puzzles/dinosaurs-trex.svg"
+  },
+  {
+   "id": "dinosaurs-longneck",
+   "theme": "dinosaurs",
+   "title": {
+    "en": "Lake Dino",
+    "ar": "ديناصور البحيرة"
+   },
+   "image": "assets/puzzles/dinosaurs-longneck.svg"
+  },
+  {
+   "id": "cars-race",
+   "theme": "cars",
+   "title": {
+    "en": "Race Car",
+    "ar": "سيارة السباق"
+   },
+   "image": "assets/puzzles/cars-race.svg"
+  },
+  {
+   "id": "cars-bus",
+   "theme": "cars",
+   "title": {
+    "en": "City Bus",
+    "ar": "حافلة المدينة"
+   },
+   "image": "assets/puzzles/cars-bus.svg"
+  },
+  {
+   "id": "space-rocket",
+   "theme": "space",
+   "title": {
+    "en": "Rocket Trip",
+    "ar": "رحلة الصاروخ"
+   },
+   "image": "assets/puzzles/space-rocket.svg"
+  },
+  {
+   "id": "space-astronaut",
+   "theme": "space",
+   "title": {
+    "en": "Moon Walk",
+    "ar": "نزهة على القمر"
+   },
+   "image": "assets/puzzles/space-astronaut.svg"
+  },
+  {
+   "id": "castles-castle",
+   "theme": "castles",
+   "title": {
+    "en": "Hill Castle",
+    "ar": "قلعة التلة"
+   },
+   "image": "assets/puzzles/castles-castle.svg"
+  },
+  {
+   "id": "castles-dragon",
+   "theme": "castles",
+   "title": {
+    "en": "Friendly Dragon",
+    "ar": "التنين اللطيف"
+   },
+   "image": "assets/puzzles/castles-dragon.svg"
+  },
+  {
+   "id": "nature-mountains",
+   "theme": "nature",
+   "title": {
+    "en": "Sunset Mountains",
+    "ar": "جبال الغروب"
+   },
+   "image": "assets/puzzles/nature-mountains.svg"
+  },
+  {
+   "id": "nature-rainbow",
+   "theme": "nature",
+   "title": {
+    "en": "Rainbow Meadow",
+    "ar": "مرج قوس قزح"
+   },
+   "image": "assets/puzzles/nature-rainbow.svg"
+  }
+ ],
+ "sizeBytes": 0
+}

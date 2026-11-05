@@ -1,0 +1,12 @@
+node_modules
+dist
+*.local
+coverage
+test-results
+playwright-report
+.DS_Store
+android/app/build
+android/build
+android/.gradle
+ios/App/build
+ios/App/Pods

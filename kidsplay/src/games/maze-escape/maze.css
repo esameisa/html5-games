@@ -1,0 +1,11 @@
+.maze-root { position: absolute; inset: 0; display: flex; flex-direction: column; background: #bfe8a6; }
+.maze-host { position: relative; flex: 1; min-height: 0; overflow: hidden; touch-action: none; }
+.maze-host canvas { display: block; }
+.maze-pad { position: absolute; bottom: calc(10px + var(--safe-bottom)); right: calc(12px + var(--safe-right)); display: grid; grid-template-columns: repeat(3, 64px); grid-template-rows: repeat(3, 64px); gap: 4px; opacity: .92; }
+.maze-pad-btn { width: 64px; height: 64px; padding: 0; font-size: 1.6rem; border-radius: 18px; background: rgba(255,255,255,.85); touch-action: none; }
+.maze-pad-btn.up { grid-column: 2; grid-row: 1; }
+.maze-pad-btn.left { grid-column: 1; grid-row: 2; }
+.maze-pad-btn.right { grid-column: 3; grid-row: 2; }
+.maze-pad-btn.down { grid-column: 2; grid-row: 3; }
+.maze-toast { position: absolute; top: 60px; left: 50%; transform: translateX(-50%); animation: pop-in .3s; z-index: 5; }
+@media (max-width: 420px) { .maze-pad { grid-template-columns: repeat(3, 56px); grid-template-rows: repeat(3, 56px); } .maze-pad-btn { width: 56px; height: 56px; } }

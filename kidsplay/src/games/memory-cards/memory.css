@@ -1,0 +1,10 @@
+.memory-board { flex: 1; min-height: 0; display: grid; gap: clamp(6px, 1.6vmin, 14px); padding: 4px; container-type: size; }
+.memory-card { border: none; background: transparent; padding: 0; perspective: 800px; cursor: pointer; min-width: 0; min-height: 0; aspect-ratio: 3 / 4; max-height: 100%; max-width: 100%; justify-self: center; align-self: center; width: 100%; }
+.memory-card-inner { position: relative; display: block; width: 100%; height: 100%; transition: transform 0.45s cubic-bezier(0.3, 1.4, 0.5, 1); transform-style: preserve-3d; }
+.memory-card.up .memory-card-inner { transform: rotateY(180deg); }
+.memory-face { position: absolute; inset: 0; border-radius: clamp(8px, 2vmin, 18px); display: flex; align-items: center; justify-content: center; backface-visibility: hidden; -webkit-backface-visibility: hidden; box-shadow: 0 4px 0 rgba(0,0,0,.12); font-size: min(9vmin, 64px); }
+.memory-back span { filter: drop-shadow(0 2px 2px rgba(0,0,0,.2)); opacity: .9; }
+.memory-front { background: #fff; transform: rotateY(180deg); border: 3px solid #ffe08a; }
+.memory-front img { width: 80%; height: 80%; object-fit: contain; }
+.memory-card.matched .memory-front { border-color: var(--success); animation: pulse .5s 1; background: #f0fff5; }
+.memory-card.hinted .memory-front { border-color: var(--secondary); }

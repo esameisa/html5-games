@@ -1,0 +1,477 @@
+{
+ "schemaVersion": 1,
+ "id": "memory-core",
+ "version": "1.0.0",
+ "type": "memory_cards",
+ "minAppVersion": "1.0.0",
+ "title": {
+  "en": "Memory Classics",
+  "ar": "كلاسيكيات الذاكرة"
+ },
+ "languages": [
+  "en",
+  "ar"
+ ],
+ "assets": [],
+ "levels": [
+  {
+   "id": "animals",
+   "title": {
+    "en": "Animals",
+    "ar": "الحيوانات"
+   },
+   "icon": "🐶",
+   "color": "#ffb74d",
+   "cards": [
+    {
+     "id": "animals-0",
+     "emoji": "🐶"
+    },
+    {
+     "id": "animals-1",
+     "emoji": "🐱"
+    },
+    {
+     "id": "animals-2",
+     "emoji": "🐭"
+    },
+    {
+     "id": "animals-3",
+     "emoji": "🐰"
+    },
+    {
+     "id": "animals-4",
+     "emoji": "🦊"
+    },
+    {
+     "id": "animals-5",
+     "emoji": "🐻"
+    },
+    {
+     "id": "animals-6",
+     "emoji": "🐼"
+    },
+    {
+     "id": "animals-7",
+     "emoji": "🐨"
+    },
+    {
+     "id": "animals-8",
+     "emoji": "🐯"
+    },
+    {
+     "id": "animals-9",
+     "emoji": "🦁"
+    },
+    {
+     "id": "animals-10",
+     "emoji": "🐮"
+    },
+    {
+     "id": "animals-11",
+     "emoji": "🐷"
+    },
+    {
+     "id": "animals-12",
+     "emoji": "🐸"
+    },
+    {
+     "id": "animals-13",
+     "emoji": "🐵"
+    },
+    {
+     "id": "animals-14",
+     "emoji": "🐔"
+    },
+    {
+     "id": "animals-15",
+     "emoji": "🐧"
+    },
+    {
+     "id": "animals-16",
+     "emoji": "🦉"
+    },
+    {
+     "id": "animals-17",
+     "emoji": "🦒"
+    }
+   ]
+  },
+  {
+   "id": "fruits",
+   "title": {
+    "en": "Fruits",
+    "ar": "الفواكه"
+   },
+   "icon": "🍎",
+   "color": "#ff8a80",
+   "cards": [
+    {
+     "id": "fruits-0",
+     "emoji": "🍎"
+    },
+    {
+     "id": "fruits-1",
+     "emoji": "🍌"
+    },
+    {
+     "id": "fruits-2",
+     "emoji": "🍇"
+    },
+    {
+     "id": "fruits-3",
+     "emoji": "🍓"
+    },
+    {
+     "id": "fruits-4",
+     "emoji": "🍉"
+    },
+    {
+     "id": "fruits-5",
+     "emoji": "🍊"
+    },
+    {
+     "id": "fruits-6",
+     "emoji": "🍍"
+    },
+    {
+     "id": "fruits-7",
+     "emoji": "🥝"
+    },
+    {
+     "id": "fruits-8",
+     "emoji": "🍒"
+    },
+    {
+     "id": "fruits-9",
+     "emoji": "🍑"
+    },
+    {
+     "id": "fruits-10",
+     "emoji": "🍐"
+    },
+    {
+     "id": "fruits-11",
+     "emoji": "🥭"
+    },
+    {
+     "id": "fruits-12",
+     "emoji": "🍋"
+    },
+    {
+     "id": "fruits-13",
+     "emoji": "🫐"
+    },
+    {
+     "id": "fruits-14",
+     "emoji": "🥥"
+    },
+    {
+     "id": "fruits-15",
+     "emoji": "🍈"
+    }
+   ]
+  },
+  {
+   "id": "vehicles",
+   "title": {
+    "en": "Vehicles",
+    "ar": "المركبات"
+   },
+   "icon": "🚗",
+   "color": "#4fc3f7",
+   "cards": [
+    {
+     "id": "vehicles-0",
+     "emoji": "🚗"
+    },
+    {
+     "id": "vehicles-1",
+     "emoji": "🚕"
+    },
+    {
+     "id": "vehicles-2",
+     "emoji": "🚌"
+    },
+    {
+     "id": "vehicles-3",
+     "emoji": "🚓"
+    },
+    {
+     "id": "vehicles-4",
+     "emoji": "🚑"
+    },
+    {
+     "id": "vehicles-5",
+     "emoji": "🚒"
+    },
+    {
+     "id": "vehicles-6",
+     "emoji": "🚜"
+    },
+    {
+     "id": "vehicles-7",
+     "emoji": "🚲"
+    },
+    {
+     "id": "vehicles-8",
+     "emoji": "🛵"
+    },
+    {
+     "id": "vehicles-9",
+     "emoji": "🚂"
+    },
+    {
+     "id": "vehicles-10",
+     "emoji": "✈️"
+    },
+    {
+     "id": "vehicles-11",
+     "emoji": "🚁"
+    },
+    {
+     "id": "vehicles-12",
+     "emoji": "🚀"
+    },
+    {
+     "id": "vehicles-13",
+     "emoji": "⛵"
+    },
+    {
+     "id": "vehicles-14",
+     "emoji": "🚤"
+    },
+    {
+     "id": "vehicles-15",
+     "emoji": "🛻"
+    }
+   ]
+  },
+  {
+   "id": "space",
+   "title": {
+    "en": "Space",
+    "ar": "الفضاء"
+   },
+   "icon": "🚀",
+   "color": "#7c5cff",
+   "cards": [
+    {
+     "id": "space-0",
+     "emoji": "🌍"
+    },
+    {
+     "id": "space-1",
+     "emoji": "🌙"
+    },
+    {
+     "id": "space-2",
+     "emoji": "⭐"
+    },
+    {
+     "id": "space-3",
+     "emoji": "☀️"
+    },
+    {
+     "id": "space-4",
+     "emoji": "🪐"
+    },
+    {
+     "id": "space-5",
+     "emoji": "☄️"
+    },
+    {
+     "id": "space-6",
+     "emoji": "🚀"
+    },
+    {
+     "id": "space-7",
+     "emoji": "🛸"
+    },
+    {
+     "id": "space-8",
+     "emoji": "👽"
+    },
+    {
+     "id": "space-9",
+     "emoji": "🌌"
+    },
+    {
+     "id": "space-10",
+     "emoji": "🔭"
+    },
+    {
+     "id": "space-11",
+     "emoji": "🛰️"
+    },
+    {
+     "id": "space-12",
+     "emoji": "🌠"
+    },
+    {
+     "id": "space-13",
+     "emoji": "🌑"
+    },
+    {
+     "id": "space-14",
+     "emoji": "👩‍🚀"
+    },
+    {
+     "id": "space-15",
+     "emoji": "🌕"
+    }
+   ]
+  },
+  {
+   "id": "shapes",
+   "title": {
+    "en": "Shapes",
+    "ar": "الأشكال"
+   },
+   "icon": "🔷",
+   "color": "#81c784",
+   "cards": [
+    {
+     "id": "shapes-0",
+     "emoji": "🔴"
+    },
+    {
+     "id": "shapes-1",
+     "emoji": "🟠"
+    },
+    {
+     "id": "shapes-2",
+     "emoji": "🟡"
+    },
+    {
+     "id": "shapes-3",
+     "emoji": "🟢"
+    },
+    {
+     "id": "shapes-4",
+     "emoji": "🔵"
+    },
+    {
+     "id": "shapes-5",
+     "emoji": "🟣"
+    },
+    {
+     "id": "shapes-6",
+     "emoji": "🟥"
+    },
+    {
+     "id": "shapes-7",
+     "emoji": "🟧"
+    },
+    {
+     "id": "shapes-8",
+     "emoji": "🟨"
+    },
+    {
+     "id": "shapes-9",
+     "emoji": "🟩"
+    },
+    {
+     "id": "shapes-10",
+     "emoji": "🟦"
+    },
+    {
+     "id": "shapes-11",
+     "emoji": "🟪"
+    },
+    {
+     "id": "shapes-12",
+     "emoji": "🔺"
+    },
+    {
+     "id": "shapes-13",
+     "emoji": "🔷"
+    },
+    {
+     "id": "shapes-14",
+     "emoji": "⭐"
+    },
+    {
+     "id": "shapes-15",
+     "emoji": "❤️"
+    }
+   ]
+  },
+  {
+   "id": "ocean",
+   "title": {
+    "en": "Ocean",
+    "ar": "المحيط"
+   },
+   "icon": "🐠",
+   "color": "#26c6da",
+   "cards": [
+    {
+     "id": "ocean-0",
+     "emoji": "🐠"
+    },
+    {
+     "id": "ocean-1",
+     "emoji": "🐟"
+    },
+    {
+     "id": "ocean-2",
+     "emoji": "🐡"
+    },
+    {
+     "id": "ocean-3",
+     "emoji": "🦈"
+    },
+    {
+     "id": "ocean-4",
+     "emoji": "🐙"
+    },
+    {
+     "id": "ocean-5",
+     "emoji": "🦀"
+    },
+    {
+     "id": "ocean-6",
+     "emoji": "🐬"
+    },
+    {
+     "id": "ocean-7",
+     "emoji": "🐳"
+    },
+    {
+     "id": "ocean-8",
+     "emoji": "🦑"
+    },
+    {
+     "id": "ocean-9",
+     "emoji": "🐚"
+    },
+    {
+     "id": "ocean-10",
+     "emoji": "🦐"
+    },
+    {
+     "id": "ocean-11",
+     "emoji": "🐢"
+    },
+    {
+     "id": "ocean-12",
+     "emoji": "🦭"
+    },
+    {
+     "id": "ocean-13",
+     "emoji": "🪼"
+    },
+    {
+     "id": "ocean-14",
+     "emoji": "🐋"
+    },
+    {
+     "id": "ocean-15",
+     "emoji": "🦞"
+    }
+   ]
+  }
+ ],
+ "sizeBytes": 0
+}

@@ -1,0 +1,172 @@
+{
+ "schemaVersion": 1,
+ "id": "coloring-core",
+ "version": "1.0.0",
+ "type": "coloring_templates",
+ "minAppVersion": "1.0.0",
+ "title": {
+  "en": "Coloring Book",
+  "ar": "كتاب التلوين"
+ },
+ "languages": [
+  "en",
+  "ar"
+ ],
+ "assets": [],
+ "levels": [
+  {
+   "id": "cat",
+   "theme": "animals",
+   "title": {
+    "en": "Cat",
+    "ar": "قطة"
+   },
+   "image": "assets/coloring/cat.svg"
+  },
+  {
+   "id": "puppy",
+   "theme": "animals",
+   "title": {
+    "en": "Puppy",
+    "ar": "جرو"
+   },
+   "image": "assets/coloring/puppy.svg"
+  },
+  {
+   "id": "fish",
+   "theme": "ocean",
+   "title": {
+    "en": "Fish",
+    "ar": "سمكة"
+   },
+   "image": "assets/coloring/fish.svg"
+  },
+  {
+   "id": "butterfly",
+   "theme": "nature",
+   "title": {
+    "en": "Butterfly",
+    "ar": "فراشة"
+   },
+   "image": "assets/coloring/butterfly.svg"
+  },
+  {
+   "id": "trex",
+   "theme": "dinosaurs",
+   "title": {
+    "en": "T-Rex",
+    "ar": "تي ريكس"
+   },
+   "image": "assets/coloring/trex.svg"
+  },
+  {
+   "id": "stego",
+   "theme": "dinosaurs",
+   "title": {
+    "en": "Stegosaurus",
+    "ar": "ستيغوسورس"
+   },
+   "image": "assets/coloring/stego.svg"
+  },
+  {
+   "id": "sunflower",
+   "theme": "flowers",
+   "title": {
+    "en": "Sunflower",
+    "ar": "دوّار الشمس"
+   },
+   "image": "assets/coloring/sunflower.svg"
+  },
+  {
+   "id": "tulips",
+   "theme": "flowers",
+   "title": {
+    "en": "Tulips",
+    "ar": "زهور التوليب"
+   },
+   "image": "assets/coloring/tulips.svg"
+  },
+  {
+   "id": "car",
+   "theme": "cars",
+   "title": {
+    "en": "Car",
+    "ar": "سيارة"
+   },
+   "image": "assets/coloring/car.svg"
+  },
+  {
+   "id": "truck",
+   "theme": "cars",
+   "title": {
+    "en": "Fire Truck",
+    "ar": "شاحنة إطفاء"
+   },
+   "image": "assets/coloring/truck.svg"
+  },
+  {
+   "id": "robot",
+   "theme": "robots",
+   "title": {
+    "en": "Robot",
+    "ar": "روبوت"
+   },
+   "image": "assets/coloring/robot.svg"
+  },
+  {
+   "id": "robot-dog",
+   "theme": "robots",
+   "title": {
+    "en": "Robot Dog",
+    "ar": "كلب آلي"
+   },
+   "image": "assets/coloring/robot-dog.svg"
+  },
+  {
+   "id": "house",
+   "theme": "houses",
+   "title": {
+    "en": "House",
+    "ar": "منزل"
+   },
+   "image": "assets/coloring/house.svg"
+  },
+  {
+   "id": "castle",
+   "theme": "houses",
+   "title": {
+    "en": "Castle",
+    "ar": "قلعة"
+   },
+   "image": "assets/coloring/castle.svg"
+  },
+  {
+   "id": "rocket",
+   "theme": "space",
+   "title": {
+    "en": "Rocket",
+    "ar": "صاروخ"
+   },
+   "image": "assets/coloring/rocket.svg"
+  },
+  {
+   "id": "astronaut",
+   "theme": "space",
+   "title": {
+    "en": "Astronaut",
+    "ar": "رائد فضاء"
+   },
+   "image": "assets/coloring/astronaut.svg"
+  },
+  {
+   "id": "owl",
+   "theme": "animals",
+   "title": {
+    "en": "Owl",
+    "ar": "بومة"
+   },
+   "image": "assets/coloring/owl.svg"
+  }
+ ],
+ "sizeBytes": 0
+}

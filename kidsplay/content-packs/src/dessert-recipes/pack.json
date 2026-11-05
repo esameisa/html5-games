@@ -1,0 +1,95 @@
+{
+ "schemaVersion": 1,
+ "id": "dessert-recipes",
+ "version": "1.0.0",
+ "type": "recipes",
+ "minAppVersion": "1.0.0",
+ "title": {
+  "en": "Dessert Shop",
+  "ar": "محل الحلويات"
+ },
+ "languages": [
+  "en",
+  "ar"
+ ],
+ "levels": [
+  {
+   "id": "donut",
+   "emoji": "🍩",
+   "name": {
+    "en": "Donut",
+    "ar": "دونات"
+   },
+   "unlockLevel": 2,
+   "steps": [
+    {
+     "id": "donut-base",
+     "emoji": "🍩",
+     "name": {
+      "en": "Donut",
+      "ar": "دونات"
+     }
+    },
+    {
+     "id": "icing",
+     "emoji": "🧁",
+     "name": {
+      "en": "Icing",
+      "ar": "كريمة"
+     }
+    },
+    {
+     "id": "sprinkles",
+     "emoji": "🍬",
+     "name": {
+      "en": "Sprinkles",
+      "ar": "حلوى ملوّنة"
+     }
+    }
+   ]
+  },
+  {
+   "id": "milkshake",
+   "emoji": "🥤",
+   "name": {
+    "en": "Milkshake",
+    "ar": "ميلك شيك"
+   },
+   "unlockLevel": 5,
+   "steps": [
+    {
+     "id": "cup",
+     "emoji": "🥤",
+     "name": {
+      "en": "Cup",
+      "ar": "كوب"
+     }
+    },
+    {
+     "id": "milk",
+     "emoji": "🥛",
+     "name": {
+      "en": "Milk",
+      "ar": "حليب"
+     }
+    },
+    {
+     "id": "strawberry",
+     "emoji": "🍓",
+     "name": {
+      "en": "Strawberry",
+      "ar": "فراولة"
+     }
+    },
+    {
+     "id": "cherry",
+     "emoji": "🍒",
+     "name": {
+      "en": "Cherry",
+      "ar": "كرز"
+     }
+    }
+   ]
+  }
+ ]
+}

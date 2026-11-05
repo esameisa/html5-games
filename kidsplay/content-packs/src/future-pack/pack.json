@@ -1,0 +1,44 @@
+{
+ "schemaVersion": 1,
+ "id": "future-pack",
+ "version": "1.0.0",
+ "type": "memory_cards",
+ "minAppVersion": "9.0.0",
+ "title": {
+  "en": "Future Cards (needs update)",
+  "ar": "بطاقات المستقبل (تتطلب تحديثًا)"
+ },
+ "languages": [
+  "en",
+  "ar"
+ ],
+ "levels": [
+  {
+   "id": "future",
+   "title": {
+    "en": "Future",
+    "ar": "المستقبل"
+   },
+   "icon": "🤖",
+   "color": "#90a4ae",
+   "cards": [
+    {
+     "id": "f0",
+     "emoji": "🤖"
+    },
+    {
+     "id": "f1",
+     "emoji": "🛸"
+    },
+    {
+     "id": "f2",
+     "emoji": "🚀"
+    },
+    {
+     "id": "f3",
+     "emoji": "🧪"
+    }
+   ]
+  }
+ ]
+}
