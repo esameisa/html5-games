@@ -47,3 +47,11 @@ async function boot() {
 }
 
 void boot();
+
+// Web builds: register the generated service worker so the app works offline after first load.
+// Native (Capacitor) builds already serve every file from the app bundle.
+if (import.meta.env.PROD && 'serviceWorker' in navigator && !(window as unknown as { Capacitor?: { isNativePlatform?: () => boolean } }).Capacitor?.isNativePlatform?.()) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js').catch((e) => console.warn('[sw] registration failed', e));
+  });
+}

@@ -35,7 +35,7 @@ describe('memory cards', () => {
     expect(e.flip(a).kind).toBe('first');
     expect(e.flip(a).kind).toBe('ignored'); // same card
     expect(e.flip(b).kind).toBe('mismatch');
-    const other = e.cards.findIndex((c, i) => i !== a && i !== b);
+    const other = e.cards.findIndex((_c, i) => i !== a && i !== b);
     expect(e.flip(other).kind).toBe('ignored'); // locked until resolved
     e.resolveMismatch();
     expect(e.cards[a].faceUp).toBe(false);
