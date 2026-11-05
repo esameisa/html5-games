@@ -49,7 +49,7 @@ self.addEventListener('fetch', (e) => {
   const url = new URL(e.request.url);
   if (e.request.method !== 'GET' || url.origin !== location.origin || url.pathname.includes('/content/')) return;
   e.respondWith(
-    caches.match(e.request, { ignoreSearch: true }).then(
+    caches.match(e.request, { ignoreSearch: true, ignoreVary: true }).then(
       (hit) => hit || fetch(e.request).catch(() => caches.match('./')),
     ),
   );

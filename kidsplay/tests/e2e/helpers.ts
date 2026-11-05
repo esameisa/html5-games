@@ -8,7 +8,7 @@ export async function onboard(page: Page, opts: { name?: string; age?: '4-6' | '
   await page.getByTestId('onboarding-language').getByRole('button').last().click();
   await page.getByTestId('nickname-input').fill(opts.name ?? 'Tester');
   await page.getByTestId('nickname-next').click();
-  await page.getByTestId('char-panda').click();
+  await page.getByTestId('char-fox').click();
   await page.getByTestId('avatar-next').click();
   await page.getByTestId(`age-${opts.age ?? '7-9'}`).click();
   await page.getByTestId('age-next').click();
@@ -39,4 +39,10 @@ export async function passGate(page: Page) {
   const [a, b] = text.match(/\d+/g)!.map(Number);
   for (const d of String(a * b)) await page.getByRole('button', { name: d, exact: true }).click();
   await page.getByRole('button', { name: 'submit' }).click();
+}
+
+/** The splash auto-advances after ~1.6s; tap it if it is still showing. */
+export async function skipSplash(page: Page) {
+  await page.getByTestId('splash').click({ timeout: 1500 }).catch(() => {});
+  await expect(page.getByTestId('splash')).toHaveCount(0);
 }

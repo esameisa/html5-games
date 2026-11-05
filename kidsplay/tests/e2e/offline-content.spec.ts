@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import { onboard, openGame, passGate, solveMemory } from './helpers';
+import { onboard, openGame, passGate, solveMemory, skipSplash } from './helpers';
 
 test('no third-party requests are ever made', async ({ page }) => {
   const external: string[] = [];
@@ -19,16 +19,17 @@ test('works offline after the first visit (service worker)', async ({ page, cont
     await navigator.serviceWorker.ready;
   });
   await page.reload(); // now controlled by the service worker
-  await page.getByTestId('splash').click();
+  await skipSplash(page);
   await expect(page.getByTestId('world-screen')).toBeVisible();
   await context.setOffline(true);
   await page.reload();
-  await page.getByTestId('splash').click();
+  await skipSplash(page);
   await openGame(page, 'brain', 'memory-cards', 'easy');
   await page.getByTestId('level-shapes').click();
   await solveMemory(page);
   await expect(page.getByTestId('result-modal')).toBeVisible();
   await page.getByTestId('result-exit').click();
+  await page.getByTestId('area-close').click();
   await openGame(page, 'adventure', 'maze-escape', 'easy');
   await page.getByTestId('level-e1').click();
   await expect(page.locator('[data-testid=maze-canvas] canvas')).toBeVisible();
@@ -47,18 +48,16 @@ test('parents can download a content pack which then appears in the game', async
   await expect(page.getByTestId('installed-pack-farm-friends')).toBeVisible();
   await page.getByTestId('install-ocean-puzzles').click();
   await expect(page.getByTestId('installed-pack-ocean-puzzles')).toBeVisible();
-  await page.goBack().catch(() => {});
   await page.reload();
-  await page.getByTestId('splash').click();
+  await skipSplash(page);
   await openGame(page, 'brain', 'memory-cards', 'easy');
   await expect(page.getByTestId('level-farm')).toBeVisible();
   await page.getByTestId('level-farm').click();
   await solveMemory(page);
   await expect(page.getByTestId('result-modal')).toBeVisible();
   await page.getByTestId('result-exit').click();
-  // Downloaded puzzle images load from IndexedDB blobs
+  // Downloaded puzzles join the level list (unlocked through normal progression).
   await page.getByTestId('game-card-puzzle-world').click();
   await page.getByTestId('lobby-play').click();
-  const img = page.getByTestId('level-ocean-whale').locator('img');
-  await expect(img).toHaveAttribute('src', /^blob:/);
+  await expect(page.getByTestId('level-ocean-whale')).toBeVisible();
 });

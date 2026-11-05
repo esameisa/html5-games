@@ -76,8 +76,8 @@ test('math battle: answer questions to finish the race', async ({ page }) => {
   await openGame(page, 'brain', 'math-battle', 'easy');
   await page.getByTestId('mode-solo').isVisible();
   await page.getByTestId('math-start').click();
-  for (let i = 0; i < 30; i++) {
-    if (await page.getByTestId('result-modal').count()) break;
+  // Solo race: 10 correct answers reach the finish flag.
+  for (let i = 0; i < 10; i++) {
     const expr = (await page.locator('.math-expr').textContent())!;
     const e = expr.replace('= ?', '').replace(/×/g, '*').replace(/÷/g, '/').replace(/−/g, '-');
     const ans = String(Function(`return (${e})`)());

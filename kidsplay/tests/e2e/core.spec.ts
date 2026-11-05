@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import { onboard, openGame, passGate, solveMemory } from './helpers';
+import { onboard, openGame, passGate, solveMemory, skipSplash } from './helpers';
 
 test('onboarding → world → memory cards → rewards are saved', async ({ page }) => {
   await onboard(page, { name: 'Lina' });
@@ -13,7 +13,7 @@ test('onboarding → world → memory cards → rewards are saved', async ({ pag
   await expect(page.getByTestId('hud-stars')).toContainText('3');
   // Progress survives a reload (IndexedDB).
   await page.reload();
-  await page.getByTestId('splash').click();
+  await skipSplash(page);
   await expect(page.getByTestId('hud-stars')).toContainText('3');
 });
 
@@ -62,6 +62,7 @@ test('multiple profiles keep separate progress', async ({ page }) => {
   await page.getByTestId('area-close').click();
   await page.getByTestId('nav-profiles').click();
   await page.getByTestId('add-profile').click();
+  await page.getByTestId('onboarding-language').getByRole('button').last().click();
   await page.getByTestId('nickname-input').fill('Mona');
   await page.getByTestId('nickname-next').click();
   await page.getByTestId('avatar-next').click();
@@ -86,5 +87,5 @@ test('parents area is behind a gate and manages settings and data', async ({ pag
   await page.getByTestId('parents-tab-data').click();
   await page.getByTestId('delete-all').click();
   await page.getByRole('button', { name: 'Confirm' }).click();
-  await expect(page.getByTestId('onboarding-language')).toBeVisible();
+  await expect(page.getByTestId('onboarding-welcome')).toBeVisible();
 });
