@@ -1,0 +1,24 @@
+.cs-root { position: absolute; inset: 0; display: flex; gap: 8px; padding: 6px; background: linear-gradient(135deg, #fff3e0, #f3e5f5); }
+.cs-root.land { flex-direction: row; }
+.cs-root.port { flex-direction: column; }
+.cs-side { display: flex; gap: 6px; align-items: center; justify-content: center; flex-wrap: wrap; }
+.cs-root.land .cs-side { flex-direction: column; width: 120px; flex-shrink: 0; align-content: center; overflow-y: auto; }
+.cs-root.land .cs-side:first-child { width: 64px; }
+.cs-root.port .cs-side { flex-direction: row; flex-shrink: 0; }
+.cs-root.land .cs-colors { display: grid; grid-template-columns: repeat(2, 52px); }
+.cs-root.port .cs-colors { display: grid; grid-template-columns: repeat(8, minmax(36px, 1fr)); width: 100%; }
+.cs-stage { position: relative; flex: 1; min-width: 0; min-height: 0; display: flex; align-items: center; justify-content: center; }
+.cs-paper { position: relative; background: #fff; border-radius: 18px; box-shadow: var(--shadow); overflow: hidden; }
+.cs-canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.cs-lines { pointer-events: none; }
+.cs-events { position: absolute; inset: 0; touch-action: none; cursor: crosshair; }
+.cs-events.tool-fill { cursor: cell; }
+.cs-swatch { min-width: 44px; min-height: 44px; }
+.cs-color { width: 46px; height: 46px; border-radius: 50%; border: 3px solid #fff; box-shadow: var(--shadow-sm); cursor: pointer; justify-self: center; }
+.cs-color.selected, .cs-swatch.selected { outline: 4px solid var(--secondary); outline-offset: 1px; transform: scale(1.08); }
+.cs-sizes { display: flex; gap: 4px; flex-wrap: wrap; justify-content: center; grid-column: 1 / -1; }
+.cs-tool { font-size: 1.5rem; }
+.cs-toast { position: absolute; bottom: 12px; animation: pop-in .3s; }
+.cs-root.port .cs-side:first-child { order: 0; }
+.cs-root.port .cs-stage { order: 1; }
+.cs-root.port .cs-colors { order: 2; }

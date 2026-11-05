@@ -12,6 +12,16 @@ import { memoryStrings } from './memory-cards/i18n';
 import { validateCardSet, MEMORY_CONTENT_TYPE } from './memory-cards/content';
 import memoryPack from './memory-cards/cards.json';
 
+import { puzzleManifest } from './puzzle-world/manifest';
+import { puzzleStrings } from './puzzle-world/i18n';
+import { validatePuzzle, PUZZLE_CONTENT_TYPE } from './puzzle-world/content';
+import puzzlePack from './puzzle-world/puzzles.json';
+
+import { colorManifest } from './color-splash/manifest';
+import { colorStrings } from './color-splash/i18n';
+import { validateTemplate, COLORING_CONTENT_TYPE } from './color-splash/content';
+import coloringPack from './color-splash/templates.json';
+
 export const registry = new GameRegistry();
 
 let installed = false;
@@ -24,6 +34,16 @@ export function installGames(): GameRegistry {
   registerGameStrings('memory-cards', memoryStrings);
   registerContentType(MEMORY_CONTENT_TYPE, validateCardSet);
   contentLibrary.registerBundled(memoryPack);
+
+  registry.register(puzzleManifest);
+  registerGameStrings('puzzle-world', puzzleStrings);
+  registerContentType(PUZZLE_CONTENT_TYPE, validatePuzzle);
+  contentLibrary.registerBundled(puzzlePack);
+
+  registry.register(colorManifest);
+  registerGameStrings('color-splash', colorStrings);
+  registerContentType(COLORING_CONTENT_TYPE, validateTemplate);
+  contentLibrary.registerBundled(coloringPack);
 
   return registry;
 }
