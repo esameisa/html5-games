@@ -22,6 +22,11 @@ import { colorStrings } from './color-splash/i18n';
 import { validateTemplate, COLORING_CONTENT_TYPE } from './color-splash/content';
 import coloringPack from './color-splash/templates.json';
 
+import { mazeManifest } from './maze-escape/manifest';
+import { mazeStrings } from './maze-escape/i18n';
+import { validateMazeLevel, MAZE_CONTENT_TYPE } from './maze-escape/content';
+import mazePack from './maze-escape/levels.json';
+
 export const registry = new GameRegistry();
 
 let installed = false;
@@ -44,6 +49,11 @@ export function installGames(): GameRegistry {
   registerGameStrings('color-splash', colorStrings);
   registerContentType(COLORING_CONTENT_TYPE, validateTemplate);
   contentLibrary.registerBundled(coloringPack);
+
+  registry.register(mazeManifest);
+  registerGameStrings('maze-escape', mazeStrings);
+  registerContentType(MAZE_CONTENT_TYPE, validateMazeLevel);
+  contentLibrary.registerBundled(mazePack);
 
   return registry;
 }
