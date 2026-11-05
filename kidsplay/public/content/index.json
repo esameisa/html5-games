@@ -1,0 +1,97 @@
+{
+ "schemaVersion": 1,
+ "generatedAt": "2026-11-05T05:52:11.016Z",
+ "packs": [
+  {
+   "id": "dessert-recipes",
+   "version": "1.0.0",
+   "type": "recipes",
+   "title": {
+    "en": "Dessert Shop",
+    "ar": "محل الحلويات"
+   },
+   "minAppVersion": "1.0.0",
+   "manifestUrl": "packs/dessert-recipes/manifest.json",
+   "manifestSha256": "429b1d23da2513687ade702fb457e318ce03b66113174e0c90a5024bbfda16ec",
+   "sizeBytes": 1464
+  },
+  {
+   "id": "farm-friends",
+   "version": "1.0.0",
+   "type": "memory_cards",
+   "title": {
+    "en": "Farm Friends",
+    "ar": "أصدقاء المزرعة"
+   },
+   "minAppVersion": "1.0.0",
+   "manifestUrl": "packs/farm-friends/manifest.json",
+   "manifestSha256": "0860b3bdc11a4775b8845cbef1d5e43433c8f55f84d82fe9bfcda914ef0c7365",
+   "sizeBytes": 1427
+  },
+  {
+   "id": "future-pack",
+   "version": "1.0.0",
+   "type": "memory_cards",
+   "title": {
+    "en": "Future Cards (needs update)",
+    "ar": "بطاقات المستقبل (تتطلب تحديثًا)"
+   },
+   "minAppVersion": "9.0.0",
+   "manifestUrl": "packs/future-pack/manifest.json",
+   "manifestSha256": "bfaa1b0f53910150257cf95adde31a9b0327eb4275224520780e69a6c5048304",
+   "sizeBytes": 685
+  },
+  {
+   "id": "math-times-tables",
+   "version": "1.0.0",
+   "type": "math_questions",
+   "title": {
+    "en": "Times Table Stories",
+    "ar": "قصص جدول الضرب"
+   },
+   "minAppVersion": "1.0.0",
+   "manifestUrl": "packs/math-times-tables/manifest.json",
+   "manifestSha256": "3a4afe1acdfe861906294d17df4629659d6b4fee5cd8fc5645b1142904d42116",
+   "sizeBytes": 2218
+  },
+  {
+   "id": "maze-challenge",
+   "version": "1.0.0",
+   "type": "maze_layouts",
+   "title": {
+    "en": "Maze Challenge Pack",
+    "ar": "حزمة تحدي المتاهات"
+   },
+   "minAppVersion": "1.0.0",
+   "manifestUrl": "packs/maze-challenge/manifest.json",
+   "manifestSha256": "a4abc76fb46cce8cf8bcc5c81e567c739bad7246b93e0afb84357a9fdadb6ad9",
+   "sizeBytes": 1032
+  },
+  {
+   "id": "ocean-puzzles",
+   "version": "1.1.0",
+   "type": "puzzle_images",
+   "title": {
+    "en": "Ocean Puzzles",
+    "ar": "ألغاز المحيط"
+   },
+   "minAppVersion": "1.0.0",
+   "manifestUrl": "packs/ocean-puzzles/manifest.json",
+   "manifestSha256": "7c207643a8f0a101184eed7c07c33949d3a66d4c0b0801d1b27a96c37c9c0059",
+   "sizeBytes": 2871
+  },
+  {
+   "id": "seasonal-coloring",
+   "version": "1.0.0",
+   "type": "coloring_templates",
+   "title": {
+    "en": "Seasonal Coloring",
+    "ar": "تلوين المواسم"
+   },
+   "minAppVersion": "1.0.0",
+   "manifestUrl": "packs/seasonal-coloring/manifest.json",
+   "manifestSha256": "de80be9c89770bde15a2e71c1a7826f353f169180733451546e27e643ea11c26",
+   "sizeBytes": 2293
+  }
+ ]
+}

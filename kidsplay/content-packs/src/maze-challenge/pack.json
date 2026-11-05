@@ -1,0 +1,64 @@
+{
+ "schemaVersion": 1,
+ "id": "maze-challenge",
+ "version": "1.0.0",
+ "type": "maze_layouts",
+ "minAppVersion": "1.0.0",
+ "title": {
+  "en": "Maze Challenge Pack",
+  "ar": "حزمة تحدي المتاهات"
+ },
+ "languages": [
+  "en",
+  "ar"
+ ],
+ "levels": [
+  {
+   "id": "x-easy-1",
+   "difficulty": "easy",
+   "title": {
+    "en": "Bonus Garden",
+    "ar": "حديقة إضافية"
+   },
+   "generator": {
+    "seed": 3001,
+    "w": 7,
+    "h": 7,
+    "keys": 0,
+    "stars": 4,
+    "braid": 0.5
+   }
+  },
+  {
+   "id": "x-med-1",
+   "difficulty": "medium",
+   "title": {
+    "en": "Bonus Cave",
+    "ar": "كهف إضافي"
+   },
+   "generator": {
+    "seed": 3101,
+    "w": 11,
+    "h": 9,
+    "keys": 2,
+    "stars": 4
+   }
+  },
+  {
+   "id": "x-hard-1",
+   "difficulty": "hard",
+   "title": {
+    "en": "Bonus Castle",
+    "ar": "قلعة إضافية"
+   },
+   "requireAllStars": true,
+   "generator": {
+    "seed": 3201,
+    "w": 15,
+    "h": 13,
+    "keys": 3,
+    "stars": 8
+   }
+  }
+ ]
+}

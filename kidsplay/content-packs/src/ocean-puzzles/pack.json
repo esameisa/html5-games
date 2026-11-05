@@ -1,0 +1,35 @@
+{
+ "schemaVersion": 1,
+ "id": "ocean-puzzles",
+ "version": "1.1.0",
+ "type": "puzzle_images",
+ "minAppVersion": "1.0.0",
+ "title": {
+  "en": "Ocean Puzzles",
+  "ar": "ألغاز المحيط"
+ },
+ "languages": [
+  "en",
+  "ar"
+ ],
+ "levels": [
+  {
+   "id": "ocean-whale",
+   "theme": "ocean",
+   "title": {
+    "en": "Happy Whale",
+    "ar": "الحوت السعيد"
+   },
+   "image": "images/whale.svg"
+  },
+  {
+   "id": "ocean-crab",
+   "theme": "ocean",
+   "title": {
+    "en": "Beach Crab",
+    "ar": "سلطعون الشاطئ"
+   },
+   "image": "images/crab.svg"
+  }
+ ]
+}

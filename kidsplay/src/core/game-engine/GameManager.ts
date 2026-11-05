@@ -154,7 +154,7 @@ export class GameManager {
       }
     }
     this.container?.replaceChildren();
-    const had = this.plugin !== null || this._state !== 'idle';
+    const had = this.plugin !== null || (this._state !== 'idle' && this._state !== 'destroyed');
     this.plugin = null;
     this.manifest = null;
     this.container = null;

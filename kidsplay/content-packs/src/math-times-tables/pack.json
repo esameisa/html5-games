@@ -1,0 +1,86 @@
+{
+ "schemaVersion": 1,
+ "id": "math-times-tables",
+ "version": "1.0.0",
+ "type": "math_questions",
+ "minAppVersion": "1.0.0",
+ "title": {
+  "en": "Times Table Stories",
+  "ar": "قصص جدول الضرب"
+ },
+ "languages": [
+  "en",
+  "ar"
+ ],
+ "levels": [
+  {
+   "id": "times-stories",
+   "title": {
+    "en": "Times Table Stories",
+    "ar": "قصص جدول الضرب"
+   },
+   "ageGroups": [
+    "10-12",
+    "7-9"
+   ],
+   "questions": [
+    {
+     "q": {
+      "en": "A garden has 6 rows of 7 flowers. How many flowers?",
+      "ar": "في الحديقة 6 صفوف في كل منها 7 زهرات. كم زهرة؟"
+     },
+     "answer": "42"
+    },
+    {
+     "q": {
+      "en": "A garden has 8 rows of 9 flowers. How many flowers?",
+      "ar": "في الحديقة 8 صفوف في كل منها 9 زهرات. كم زهرة؟"
+     },
+     "answer": "72"
+    },
+    {
+     "q": {
+      "en": "A garden has 12 rows of 11 flowers. How many flowers?",
+      "ar": "في الحديقة 12 صفوف في كل منها 11 زهرات. كم زهرة؟"
+     },
+     "answer": "132"
+    },
+    {
+     "q": {
+      "en": "A garden has 7 rows of 8 flowers. How many flowers?",
+      "ar": "في الحديقة 7 صفوف في كل منها 8 زهرات. كم زهرة؟"
+     },
+     "answer": "56"
+    },
+    {
+     "q": {
+      "en": "A garden has 9 rows of 6 flowers. How many flowers?",
+      "ar": "في الحديقة 9 صفوف في كل منها 6 زهرات. كم زهرة؟"
+     },
+     "answer": "54"
+    },
+    {
+     "q": {
+      "en": "A garden has 11 rows of 11 flowers. How many flowers?",
+      "ar": "في الحديقة 11 صفوف في كل منها 11 زهرات. كم زهرة؟"
+     },
+     "answer": "121"
+    },
+    {
+     "q": {
+      "en": "A garden has 12 rows of 12 flowers. How many flowers?",
+      "ar": "في الحديقة 12 صفوف في كل منها 12 زهرات. كم زهرة؟"
+     },
+     "answer": "144"
+    },
+    {
+     "q": {
+      "en": "A garden has 15 rows of 4 flowers. How many flowers?",
+      "ar": "في الحديقة 15 صفوف في كل منها 4 زهرات. كم زهرة؟"
+     },
+     "answer": "60"
+    }
+   ]
+  }
+ ]
+}

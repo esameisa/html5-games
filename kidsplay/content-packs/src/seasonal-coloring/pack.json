@@ -1,0 +1,35 @@
+{
+ "schemaVersion": 1,
+ "id": "seasonal-coloring",
+ "version": "1.0.0",
+ "type": "coloring_templates",
+ "minAppVersion": "1.0.0",
+ "title": {
+  "en": "Seasonal Coloring",
+  "ar": "تلوين المواسم"
+ },
+ "languages": [
+  "en",
+  "ar"
+ ],
+ "levels": [
+  {
+   "id": "season-snowman",
+   "theme": "seasons",
+   "title": {
+    "en": "Snowman",
+    "ar": "رجل الثلج"
+   },
+   "image": "art/snowman.svg"
+  },
+  {
+   "id": "season-lantern",
+   "theme": "seasons",
+   "title": {
+    "en": "Lantern",
+    "ar": "فانوس"
+   },
+   "image": "art/lantern.svg"
+  }
+ ]
+}
