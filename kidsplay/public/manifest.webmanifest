@@ -1,0 +1,10 @@
+{
+  "name": "KidsPlay",
+  "short_name": "KidsPlay",
+  "start_url": "./",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#7ec8ff",
+  "theme_color": "#7ec8ff",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}
