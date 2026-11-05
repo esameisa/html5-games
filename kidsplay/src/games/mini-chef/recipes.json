@@ -1,0 +1,301 @@
+{
+ "schemaVersion": 1,
+ "id": "chef-core",
+ "version": "1.0.0",
+ "type": "recipes",
+ "minAppVersion": "1.0.0",
+ "title": {
+  "en": "Kitchen Classics",
+  "ar": "أطباق المطبخ"
+ },
+ "languages": [
+  "en",
+  "ar"
+ ],
+ "assets": [],
+ "levels": [
+  {
+   "id": "sandwich",
+   "emoji": "🥪",
+   "name": {
+    "en": "Sandwich",
+    "ar": "شطيرة"
+   },
+   "unlockLevel": 1,
+   "steps": [
+    {
+     "id": "bread",
+     "emoji": "🍞",
+     "name": {
+      "en": "Bread",
+      "ar": "خبز"
+     }
+    },
+    {
+     "id": "cheese",
+     "emoji": "🧀",
+     "name": {
+      "en": "Cheese",
+      "ar": "جبن"
+     }
+    },
+    {
+     "id": "cucumber",
+     "emoji": "🥒",
+     "name": {
+      "en": "Cucumber",
+      "ar": "خيار"
+     }
+    },
+    {
+     "id": "bread",
+     "emoji": "🍞",
+     "name": {
+      "en": "Bread",
+      "ar": "خبز"
+     }
+    }
+   ]
+  },
+  {
+   "id": "fruit-salad",
+   "emoji": "🥗",
+   "name": {
+    "en": "Fruit salad",
+    "ar": "سلطة فواكه"
+   },
+   "unlockLevel": 1,
+   "steps": [
+    {
+     "id": "bowl",
+     "emoji": "🥣",
+     "name": {
+      "en": "Bowl",
+      "ar": "وعاء"
+     }
+    },
+    {
+     "id": "strawberry",
+     "emoji": "🍓",
+     "name": {
+      "en": "Strawberry",
+      "ar": "فراولة"
+     }
+    },
+    {
+     "id": "banana",
+     "emoji": "🍌",
+     "name": {
+      "en": "Banana",
+      "ar": "موز"
+     }
+    },
+    {
+     "id": "grapes",
+     "emoji": "🍇",
+     "name": {
+      "en": "Grapes",
+      "ar": "عنب"
+     }
+    }
+   ]
+  },
+  {
+   "id": "pancakes",
+   "emoji": "🥞",
+   "name": {
+    "en": "Pancakes",
+    "ar": "فطائر محلاة"
+   },
+   "unlockLevel": 3,
+   "steps": [
+    {
+     "id": "pancake",
+     "emoji": "🥞",
+     "name": {
+      "en": "Pancakes",
+      "ar": "فطائر"
+     }
+    },
+    {
+     "id": "butter",
+     "emoji": "🧈",
+     "name": {
+      "en": "Butter",
+      "ar": "زبدة"
+     }
+    },
+    {
+     "id": "honey",
+     "emoji": "🍯",
+     "name": {
+      "en": "Honey",
+      "ar": "عسل"
+     }
+    },
+    {
+     "id": "blueberry",
+     "emoji": "🫐",
+     "name": {
+      "en": "Blueberries",
+      "ar": "توت أزرق"
+     }
+    }
+   ]
+  },
+  {
+   "id": "ice-cream",
+   "emoji": "🍦",
+   "name": {
+    "en": "Ice cream",
+    "ar": "آيس كريم"
+   },
+   "unlockLevel": 4,
+   "steps": [
+    {
+     "id": "cone",
+     "emoji": "🍦",
+     "name": {
+      "en": "Cone",
+      "ar": "بسكويت مخروطي"
+     }
+    },
+    {
+     "id": "vanilla",
+     "emoji": "🍨",
+     "name": {
+      "en": "Vanilla scoop",
+      "ar": "آيس كريم فانيليا"
+     }
+    },
+    {
+     "id": "chocolate",
+     "emoji": "🍫",
+     "name": {
+      "en": "Chocolate",
+      "ar": "شوكولاتة"
+     }
+    },
+    {
+     "id": "cherry",
+     "emoji": "🍒",
+     "name": {
+      "en": "Cherry",
+      "ar": "كرز"
+     }
+    }
+   ]
+  },
+  {
+   "id": "pizza",
+   "emoji": "🍕",
+   "name": {
+    "en": "Pizza",
+    "ar": "بيتزا"
+   },
+   "unlockLevel": 6,
+   "steps": [
+    {
+     "id": "dough",
+     "emoji": "🫓",
+     "name": {
+      "en": "Dough",
+      "ar": "عجين"
+     }
+    },
+    {
+     "id": "sauce",
+     "emoji": "🥫",
+     "name": {
+      "en": "Tomato sauce",
+      "ar": "صلصة طماطم"
+     }
+    },
+    {
+     "id": "cheese",
+     "emoji": "🧀",
+     "name": {
+      "en": "Cheese",
+      "ar": "جبن"
+     }
+    },
+    {
+     "id": "mushroom",
+     "emoji": "🍄",
+     "name": {
+      "en": "Mushrooms",
+      "ar": "فطر"
+     }
+    },
+    {
+     "id": "olive",
+     "emoji": "🫒",
+     "name": {
+      "en": "Olives",
+      "ar": "زيتون"
+     }
+    }
+   ]
+  },
+  {
+   "id": "burger",
+   "emoji": "🍔",
+   "name": {
+    "en": "Burger",
+    "ar": "برغر"
+   },
+   "unlockLevel": 8,
+   "steps": [
+    {
+     "id": "bun-bottom",
+     "emoji": "🍞",
+     "name": {
+      "en": "Bottom bun",
+      "ar": "خبز سفلي"
+     }
+    },
+    {
+     "id": "patty",
+     "emoji": "🥩",
+     "name": {
+      "en": "Patty",
+      "ar": "قرص لحم"
+     }
+    },
+    {
+     "id": "cheese",
+     "emoji": "🧀",
+     "name": {
+      "en": "Cheese",
+      "ar": "جبن"
+     }
+    },
+    {
+     "id": "lettuce",
+     "emoji": "🥬",
+     "name": {
+      "en": "Lettuce",
+      "ar": "خس"
+     }
+    },
+    {
+     "id": "tomato",
+     "emoji": "🍅",
+     "name": {
+      "en": "Tomato",
+      "ar": "طماطم"
+     }
+    },
+    {
+     "id": "bun-top",
+     "emoji": "🥯",
+     "name": {
+      "en": "Top bun",
+      "ar": "خبز علوي"
+     }
+    }
+   ]
+  }
+ ],
+ "sizeBytes": 0
+}

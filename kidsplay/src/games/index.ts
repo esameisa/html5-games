@@ -32,6 +32,11 @@ import { mathStrings } from './math-battle/i18n';
 import { validateQuestionSet, MATH_CONTENT_TYPE } from './math-battle/content';
 import mathPack from './math-battle/question-sets.json';
 
+import { chefManifest } from './mini-chef/manifest';
+import { chefStrings } from './mini-chef/i18n';
+import { validateRecipe, RECIPE_CONTENT_TYPE } from './mini-chef/chef';
+import chefPack from './mini-chef/recipes.json';
+
 export const registry = new GameRegistry();
 
 let installed = false;
@@ -64,6 +69,11 @@ export function installGames(): GameRegistry {
   registerGameStrings('math-battle', mathStrings);
   registerContentType(MATH_CONTENT_TYPE, validateQuestionSet);
   contentLibrary.registerBundled(mathPack);
+
+  registry.register(chefManifest);
+  registerGameStrings('mini-chef', chefStrings);
+  registerContentType(RECIPE_CONTENT_TYPE, validateRecipe);
+  contentLibrary.registerBundled(chefPack);
 
   return registry;
 }

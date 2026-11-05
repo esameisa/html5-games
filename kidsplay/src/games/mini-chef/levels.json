@@ -1,0 +1,76 @@
+{
+ "levels": [
+  {
+   "id": "chef-1",
+   "number": 1,
+   "customers": 3,
+   "extraIngredients": 1
+  },
+  {
+   "id": "chef-2",
+   "number": 2,
+   "customers": 3,
+   "extraIngredients": 2
+  },
+  {
+   "id": "chef-3",
+   "number": 3,
+   "customers": 4,
+   "extraIngredients": 2
+  },
+  {
+   "id": "chef-4",
+   "number": 4,
+   "customers": 4,
+   "extraIngredients": 3
+  },
+  {
+   "id": "chef-5",
+   "number": 5,
+   "customers": 4,
+   "extraIngredients": 3
+  },
+  {
+   "id": "chef-6",
+   "number": 6,
+   "customers": 5,
+   "extraIngredients": 4
+  },
+  {
+   "id": "chef-7",
+   "number": 7,
+   "customers": 5,
+   "extraIngredients": 4
+  },
+  {
+   "id": "chef-8",
+   "number": 8,
+   "customers": 5,
+   "extraIngredients": 5
+  },
+  {
+   "id": "chef-9",
+   "number": 9,
+   "customers": 6,
+   "extraIngredients": 5
+  },
+  {
+   "id": "chef-10",
+   "number": 10,
+   "customers": 6,
+   "extraIngredients": 6
+  },
+  {
+   "id": "chef-11",
+   "number": 11,
+   "customers": 6,
+   "extraIngredients": 6
+  },
+  {
+   "id": "chef-12",
+   "number": 12,
+   "customers": 7,
+   "extraIngredients": 6
+  }
+ ]
+}
