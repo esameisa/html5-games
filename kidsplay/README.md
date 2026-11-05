@@ -1,68 +1,109 @@
-# KidsPlay
+# KidsPlay 🎈
 
-An offline-first gaming world for children aged 4–12. It's a React + TypeScript + Vite app with Phaser 3, packaged for Android and iOS with Capacitor.
+An offline game world for kids aged 4–12, with six games, child profiles, stars and rewards, Arabic and English, and a parents area. There are no ads, no accounts and no tracking, and every game runs without internet.
 
-Children make a cartoon character, explore a floating-island world map and play six bundled games. They earn stars, coins, XP and achievements, and spend coins (never real money) on cosmetics. Two games also have a two-player mode on one device. Everything is stored on the device in IndexedDB. There are no accounts, ads or tracking, and there is no backend.
+**Built with:** React, TypeScript, Vite, Phaser 3, Capacitor (Android and iOS), and IndexedDB for local saves.
 
-| Area | Game | Highlights |
-| --- | --- | --- |
-| 🎨 Creative Island | **Color Splash** | 17 line-art templates, tap-to-fill (scanline flood fill), brush, eraser, stickers, undo/redo, gallery saved per profile, HiDPI canvas |
-| 🧠 Brain Academy | **Memory Cards** | 6/12/20/30 cards, 6 themes, flip animations, hints, optional timer, 2-player turns |
-| 🧠 Brain Academy | **Puzzle World** | 4–36 pieces, drag & snap, peek and ghost preview, hints, 6 themes, pluggable piece shapes |
-| 🧠 Brain Academy | **Math Battle** | Questions generated for each age group (counting → fractions), exactly one correct answer, adaptive difficulty, hints, optional timer, 2-player race |
-| 🌿 Adventure Jungle | **Maze Escape** (Phaser) | 20 checked-solvable levels, keys/doors, stars, D-pad + swipe + keyboard, camera follow |
-| 🍳 Cooking Village | **Mini Chef** | 6 JSON recipes, ordered assembly, drag-and-drop or tap, 12 levels, unlockable recipes, optional timed mode (never for ages 4–6) |
-| 🎈 Party Arena | Two-player modes | Memory Cards and Math Battle on one device |
+![World map](docs/screenshots/world.png)
 
-## Quick start
+---
+
+## The games
+
+### 🃏 Memory Cards
+Flip two cards at a time to find matching pairs. Choose from 4 difficulty levels (6–30 cards) and 6 themes. It has hints, an optional timer, and a two-player mode.
+
+![Memory Cards](docs/screenshots/memory-cards.png)
+
+### 🧩 Puzzle World
+Drag the pieces onto the board and they snap into place. Puzzles have 4–36 pieces, with 12 pictures across 6 themes. You can peek at the full picture or ask for a hint.
+
+![Puzzle World](docs/screenshots/puzzle-world.png)
+
+### 🎨 Color Splash
+Tap a shape to fill it, or draw freely with the brush. There are 17 pictures, plus stickers, an eraser, undo/redo, and a gallery for saved drawings.
+
+![Color Splash](docs/screenshots/color-splash.png)
+
+### 🗝️ Maze Escape
+Reach the flag. Collect stars and pick up keys to open doors. There are 20 levels, and you move with the arrow buttons, by swiping, or with the keyboard.
+
+![Maze Escape](docs/screenshots/maze-escape.png)
+
+### 🏁 Math Battle
+Answer math questions to move your runner to the finish. Questions suit the child's age, from counting up to fractions. There's a two-player race mode.
+
+![Math Battle](docs/screenshots/math-battle.png)
+
+### 👩‍🍳 Mini Chef
+Read the customer's order, then add the ingredients in the right order and serve the dish. There are 6 recipes and 12 levels, and new recipes unlock as you play.
+
+![Mini Chef](docs/screenshots/mini-chef.png)
+
+---
+
+## Run it locally
 
 ```bash
 cd kidsplay
 npm install
-npm run dev            # http://localhost:5173
-npm test               # unit/component tests (Vitest + RTL)
-npm run build          # type-check + production build into dist/
-npm run test:e2e       # Playwright (builds must exist: run `npm run build` first)
+npm run dev        # open http://localhost:5173
+npm test           # unit tests
 ```
 
-### Mobile
+## Deploy as a website
+
+```bash
+npm run build      # output goes to dist/
+```
+
+Upload the `dist/` folder to any static host, such as Netlify, Vercel, GitHub Pages, Firebase Hosting or S3. After the first visit the site keeps working offline.
+
+## Build the Android app
+
+You need Android Studio (which includes the Android SDK) and JDK 21.
 
 ```bash
 npm run build
-npx cap sync           # copy dist/ + plugins into android/ and ios/
-npx cap open android   # Android Studio
-npx cap open ios       # Xcode (macOS only)
+npx cap sync android
+npx cap open android          # opens Android Studio
 ```
 
-See [RELEASE.md](RELEASE.md) for signing, store submission and the limits of this environment.
+- **Test APK:** in Android Studio choose *Build → Build APK(s)*, or run `cd android && ./gradlew assembleDebug`. The file is `android/app/build/outputs/apk/debug/app-debug.apk`.
+- **Google Play release:** first create `android/keystore.properties` (see [RELEASE.md](RELEASE.md)), then run `./gradlew bundleRelease`. The file is `app-release.aab`.
 
-### Content packs
+## Build the iOS app
+
+You need a Mac with Xcode and an Apple Developer account.
 
 ```bash
-npm run content:build  # content-packs/src/* → public/content/ (index.json + hashed manifests)
+npm run build
+npx cap sync ios
+npx cap open ios              # opens Xcode
 ```
 
-Packs contain data and media only. Upload `public/content/` to any HTTPS static host and set `VITE_CONTENT_BASE_URL` (or enter the URL in the Parents area). See [docs/CONTENT_PACKS.md](docs/CONTENT_PACKS.md).
+In Xcode, pick your Team under **Signing & Capabilities**, then choose **Product → Archive → Distribute App** to upload to the App Store.
 
-## Scripts
+> After any code change, run `npm run build && npx cap sync` again before building the app.
 
-| Script | Purpose |
-| --- | --- |
-| `npm run dev` | Vite dev server |
-| `npm run build` | `tsc -b` + Vite production build (adds an offline service worker for the web build) |
-| `npm run preview` | Serve `dist/` |
-| `npm test` | Vitest unit and component tests |
-| `npm run test:e2e` | Playwright browser tests (phone and tablet profiles) |
-| `npm run content:build` | Build the static content-pack site |
-| `npm run cap:sync` | Build, then `npx cap sync` |
-| `node scripts/generate-native-assets.mjs` | Regenerate the Android/iOS icons and splash screens from `public/icon.svg` |
-| `python3 scripts/gen-puzzle-art.py`, `scripts/gen-coloring-art.py` | Regenerate the original bundled artwork |
+---
 
-## Documentation
+## More docs
 
-- [ARCHITECTURE.md](ARCHITECTURE.md): plugin contract, registry, game manager, storage, content system
-- [docs/CONTENT_PACKS.md](docs/CONTENT_PACKS.md): pack format, validation and hosting
-- [docs/ADDING_A_GAME.md](docs/ADDING_A_GAME.md): how to add a seventh game
-- [RELEASE.md](RELEASE.md): Android/iOS build, signing and store checklists
-- [PRIVACY_AND_SAFETY.md](PRIVACY_AND_SAFETY.md): child safety and privacy design
-- [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md): what is done, test results and known limitations
+- [RELEASE.md](RELEASE.md): signing and store checklists
+- [ARCHITECTURE.md](ARCHITECTURE.md): how the code is organized
+- [docs/CONTENT_PACKS.md](docs/CONTENT_PACKS.md): adding downloadable levels
+- [docs/ADDING_A_GAME.md](docs/ADDING_A_GAME.md): adding a new game
+- [PRIVACY_AND_SAFETY.md](PRIVACY_AND_SAFETY.md): child safety and privacy
+
+To refresh the screenshots, run `npm run build && npm run preview -- --port 4173` in one terminal and `node scripts/take-screenshots.mjs` in another.
+
+---
+
+## باختصار (عربي)
+
+- **التشغيل:** `npm install` ثم `npm run dev`
+- **نشر كموقع:** `npm run build` ثم ارفع مجلد `dist/` على أي استضافة
+- **تطبيق أندرويد:** `npm run build && npx cap sync android && npx cap open android` ثم من Android Studio اختر Build APK
+- **تطبيق آيفون:** على جهاز Mac: `npm run build && npx cap sync ios && npx cap open ios` ثم من Xcode اختر Archive
+- **الألعاب:** بطاقات الذاكرة، عالم الألغاز، رشّة ألوان، الهروب من المتاهة، سباق الرياضيات، الطاهي الصغير
