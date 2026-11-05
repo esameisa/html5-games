@@ -27,6 +27,11 @@ import { mazeStrings } from './maze-escape/i18n';
 import { validateMazeLevel, MAZE_CONTENT_TYPE } from './maze-escape/content';
 import mazePack from './maze-escape/levels.json';
 
+import { mathManifest } from './math-battle/manifest';
+import { mathStrings } from './math-battle/i18n';
+import { validateQuestionSet, MATH_CONTENT_TYPE } from './math-battle/content';
+import mathPack from './math-battle/question-sets.json';
+
 export const registry = new GameRegistry();
 
 let installed = false;
@@ -54,6 +59,11 @@ export function installGames(): GameRegistry {
   registerGameStrings('maze-escape', mazeStrings);
   registerContentType(MAZE_CONTENT_TYPE, validateMazeLevel);
   contentLibrary.registerBundled(mazePack);
+
+  registry.register(mathManifest);
+  registerGameStrings('math-battle', mathStrings);
+  registerContentType(MATH_CONTENT_TYPE, validateQuestionSet);
+  contentLibrary.registerBundled(mathPack);
 
   return registry;
 }

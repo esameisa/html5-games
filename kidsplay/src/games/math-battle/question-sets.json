@@ -1,0 +1,134 @@
+{
+ "schemaVersion": 1,
+ "id": "math-core",
+ "version": "1.0.0",
+ "type": "math_questions",
+ "minAppVersion": "1.0.0",
+ "title": {
+  "en": "Math Question Sets",
+  "ar": "مجموعات أسئلة الرياضيات"
+ },
+ "languages": [
+  "en",
+  "ar"
+ ],
+ "assets": [],
+ "levels": [
+  {
+   "id": "story-7-9",
+   "title": {
+    "en": "Story Problems",
+    "ar": "مسائل قصصية"
+   },
+   "ageGroups": [
+    "7-9"
+   ],
+   "questions": [
+    {
+     "q": {
+      "en": "Sara has 8 apples and gets 5 more. How many apples now?",
+      "ar": "مع سارة ٨ تفاحات وحصلت على ٥ أخرى. كم تفاحة معها الآن؟"
+     },
+     "answer": "13"
+    },
+    {
+     "q": {
+      "en": "There are 15 birds. 6 fly away. How many are left?",
+      "ar": "هناك ١٥ عصفورًا. طار ٦. كم بقي؟"
+     },
+     "answer": "9"
+    },
+    {
+     "q": {
+      "en": "A spider has 8 legs. How many legs do 2 spiders have?",
+      "ar": "للعنكبوت ٨ أرجل. كم رجلًا لعنكبوتين؟"
+     },
+     "answer": "16"
+    },
+    {
+     "q": {
+      "en": "You have 20 stickers and give 7 to a friend. How many are left?",
+      "ar": "معك ٢٠ ملصقًا وأعطيت صديقك ٧. كم بقي؟"
+     },
+     "answer": "13"
+    },
+    {
+     "q": {
+      "en": "3 boxes have 5 crayons each. How many crayons in total?",
+      "ar": "في ٣ علب ٥ أقلام تلوين في كل منها. كم قلمًا في المجموع؟"
+     },
+     "answer": "15"
+    },
+    {
+     "q": {
+      "en": "How many days are in one week?",
+      "ar": "كم يومًا في الأسبوع؟"
+     },
+     "answer": "7"
+    },
+    {
+     "q": {
+      "en": "A triangle has 3 corners. How many corners do 4 triangles have?",
+      "ar": "للمثلث ٣ زوايا. كم زاوية لأربعة مثلثات؟"
+     },
+     "answer": "12"
+    }
+   ]
+  },
+  {
+   "id": "shapes-4-6",
+   "title": {
+    "en": "Shapes & Sides",
+    "ar": "الأشكال والأضلاع"
+   },
+   "ageGroups": [
+    "4-6"
+   ],
+   "questions": [
+    {
+     "q": {
+      "en": "How many sides does a square have? ⬛",
+      "ar": "كم ضلعًا للمربع؟ ⬛"
+     },
+     "answer": "4"
+    },
+    {
+     "q": {
+      "en": "How many sides does a triangle have? 🔺",
+      "ar": "كم ضلعًا للمثلث؟ 🔺"
+     },
+     "answer": "3"
+    },
+    {
+     "q": {
+      "en": "How many wheels does a bike have? 🚲",
+      "ar": "كم عجلة للدراجة؟ 🚲"
+     },
+     "answer": "2"
+    },
+    {
+     "q": {
+      "en": "How many legs does a cat have? 🐱",
+      "ar": "كم رجلًا للقطة؟ 🐱"
+     },
+     "answer": "4"
+    },
+    {
+     "q": {
+      "en": "How many fingers on one hand? ✋",
+      "ar": "كم إصبعًا في اليد الواحدة؟ ✋"
+     },
+     "answer": "5"
+    },
+    {
+     "q": {
+      "en": "How many wheels does a car have? 🚗",
+      "ar": "كم عجلة للسيارة؟ 🚗"
+     },
+     "answer": "4"
+    }
+   ]
+  }
+ ],
+ "sizeBytes": 0
+}

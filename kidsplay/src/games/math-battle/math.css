@@ -1,0 +1,27 @@
+.math-root { position: absolute; inset: 0; display: flex; flex-direction: column; gap: 10px; padding: 0 12px 12px; background: linear-gradient(180deg, #ede7f6, #e3f2fd); overflow-y: auto; }
+.math-hero { font-size: 5rem; }
+.math-track { display: flex; flex-direction: column; gap: 6px; }
+.math-lane { display: flex; align-items: center; gap: 8px; }
+.math-lane-name { width: 80px; font-weight: 800; color: var(--lane); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.math-lane-road { position: relative; flex: 1; height: 46px; background: repeating-linear-gradient(90deg, #8d6e63 0 18px, #a1887f 18px 36px); border-radius: 23px; display: flex; align-items: center; justify-content: space-around; padding: 0 30px; box-shadow: inset 0 0 0 3px var(--lane); }
+.math-tick { width: 4px; height: 14px; background: rgba(255,255,255,.6); border-radius: 2px; }
+.math-flag { position: absolute; inset-inline-end: 6px; font-size: 1.6rem; }
+.math-runner { position: absolute; top: 2px; font-size: 2rem; transition: inset-inline-start .6s cubic-bezier(.3,1.4,.5,1); filter: drop-shadow(0 2px 2px rgba(0,0,0,.3)); }
+[dir='ltr'] .math-runner .flip-rtl { display: inline-block; transform: scaleX(-1); }
+[dir='rtl'] .math-runner .flip-rtl { transform: none; }
+.math-runner.active { animation: bob .6s ease-in-out infinite; }
+.math-card { background: #fff; border-radius: var(--radius-lg); box-shadow: var(--shadow); padding: 16px; text-align: center; display: flex; flex-direction: column; gap: 8px; align-items: center; justify-content: center; min-height: 140px; }
+.math-card.wrong, .math-card.timeout { animation: shake .4s; }
+.math-card.correct { box-shadow: 0 0 0 5px var(--success), var(--shadow); }
+.math-visual { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; font-size: clamp(1.8rem, 7vmin, 3rem); max-width: 520px; }
+.math-prompt { font-size: clamp(1.2rem, 4.5vmin, 1.8rem); font-weight: 800; }
+.math-expr { font-size: clamp(2.2rem, 10vmin, 4rem); font-weight: 900; letter-spacing: 2px; color: var(--secondary); }
+.math-feedback { font-weight: 900; font-size: 1.3rem; }
+.math-feedback.ok { color: var(--success); }
+.math-feedback.bad { color: var(--danger); }
+.math-hint { background: #fff8e1; border-radius: 14px; padding: 6px 12px; font-weight: 700; }
+.math-choices { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.math-choice { font-size: clamp(1.6rem, 7vmin, 2.6rem); min-height: 76px; }
+.math-choice.wrong { background: #ffd6dc; }
+.math-choice.right { background: var(--success); color: #fff; }
+@media (min-aspect-ratio: 4/3) { .math-choices { grid-template-columns: repeat(4, 1fr); } }
